@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Money</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2? family = Volkhov & display = swap" rel="folha de estilo " />
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title"><img src="style/icon-money.png" alt=""> Conversor de dólar</h1>
+    </header>
+    <main>
+        <section id="container">
+            <div id="button">
+                <input type="number" step="0.01" name="box" id="value"  placeholder="0,00"/>
+                <button style="width: min(15vw, 800px)" tabindex="0
+                " type="submit" onclick="convert()">Converter</button>
+            </div>
+            <span class="help">Digite um valor em dólares, e será retornado o mesmo valor em cents</span>
+        
+            <div id="res">
+                <p id='cents'>Cents totais: 0,00</p>
+            </div>
+        </section>
+        <section class="container-table">
+            <table  id="data-table">
+                <thead>
+                    <tr>
+                        <th>Coins</th>
+                        <th>Contagem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Quarters - 25 &cent;</th>
+                        <td id="qntQuarters">0</td>
+                    </tr>
+                    <tr>
+                        <th>Dimes - 10 &cent;</th>
+                        <td id='qntDimes'>0</td>
+                    </tr>
+                    <tr>
+                        <th>Nickels - 5 &cent;</th>
+                        <td id='qntNickels'>0</td>
+                    </tr>
+                    <tr>
+                        <th>Pennies - 1 &cent;</th>
+                        <td id='qntPennies'>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
