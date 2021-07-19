@@ -118,12 +118,13 @@ p{
 /*::::::: TABLE :::::::*/
 section.container-table {   
     margin-top: 2rem;
-    display: flex;
+    display: none;
     justify-content: center;
     visibility: hidden;
 }
 section.container-table.active{
     visibility: visible;
+    display: flex;
 }
 
 table{
